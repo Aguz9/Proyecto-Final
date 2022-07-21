@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.main{
+    background-image:linear-gradient($colorb,$colord);
+    padding: 20px 30px;
+}
+@media (max-width: 1450px){
+    .header__content{
+        font-size: 20px;
+    }
+    .header__content--navbar-in li{
+        width: 9rem;
+    }
+    .header__content--navbar-in li a{
+       font-size: 25px;
+    }
+    .content__off{
+        grid-template-columns: 1fr;
+    }
+    .catalogo__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ofertas{
+        width: 800px;
+    }
+    .ofertas__header img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 990px){
+    .header{
+        padding: 5px 5px ;
+    }
+    .header__content{
+        font-size: 10px;
+    }
+    .header__content--title a{
+        width: 50px;
+        height: 50px;
+    }
+    .header__content--navbar-in li{
+        width: 7rem;
+    }
+    .header__content--navbar-in li a{
+        font-size: 15px;
+    }
+    .ofertas{
+        display: none;
+    }
+    .catalogo__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:761px){
+    .content__navbar{
+        display: none;
+    }
+    .content__off--buscador{
+        height: 120px;
+        width: 225px;
+        text-align: center;
+    }
+    .content__off--buscador__header{
+        font-size: 15px;
+    }
+    .catalogo__grid--card{
+        width: 250px;
+    }
+    .footer_grid--ayuda_title{
+        font-size: 25px;
+    }
+    .footer_grid--ayuda_sugerencias{
+        font-size: 15px;
+    }
+    .footer_grid--contacto{
+        font-size: 15px;
+    }  
+    .footer_grid--rss_title{
+        font-size: 15px;
+    }
+    .footer_grid--rss_description li a{
+        font-size: 15px;
+    }
+    .footer_grid{
+        grid-template-columns: 1fr;
+    }
+}
