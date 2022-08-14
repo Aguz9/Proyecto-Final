@@ -266,37 +266,37 @@ ul {
   100% {
     background-color: #672544; } }
 
-.catalogo {
+.catalogoI {
   margin-top: 40px;
   max-width: 1200px;
   margin: 0 auto; }
-  .catalogo__title {
+  .catalogoI__title {
     margin-bottom: 20px;
     text-align: center;
     color: #fe7363;
     font-size: 60px;
     color: #fe7363; }
-  .catalogo__grid {
+  .catalogoI__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px; }
-    .catalogo__grid--card {
+    .catalogoI__grid--card {
       background-color: #672544;
       padding: 20px;
       width: 400px;
       border-radius: 20px;
       box-shadow: 0 25px 50px -12px black;
       transition: background-color 1s, transform 0.3s; }
-      .catalogo__grid--card:hover {
+      .catalogoI__grid--card:hover {
         background-color: #ffaf6f;
         transform: translatey(-15px); }
-      .catalogo__grid--card__header {
+      .catalogoI__grid--card__header {
         position: relative; }
-        .catalogo__grid--card__header img {
+        .catalogoI__grid--card__header img {
           width: 100%;
           border-radius: 20px;
           margin-bottom: 20px; }
-        .catalogo__grid--card__header__title {
+        .catalogoI__grid--card__header__title {
           background-color: rgba(0, 20, 0, 0.5);
           color: #672544;
           padding: 8px;
@@ -306,28 +306,28 @@ ul {
           border-top-right-radius: 20px;
           text-transform: uppercase;
           font-weight: bold; }
-      .catalogo__grid--card__title {
+      .catalogoI__grid--card__title {
         color: #fe7363;
         margin-bottom: 20px;
         font-size: 30px; }
-      .catalogo__grid--card__Description {
+      .catalogoI__grid--card__Description {
         color: #ffed55;
         margin-bottom: 40px; }
-      .catalogo__grid--card__link {
+      .catalogoI__grid--card__link {
         background-color: #fffbed;
         width: 100%;
         display: inline-block;
         border-radius: 10px;
         padding: 10px;
         text-align: center; }
-        .catalogo__grid--card__link a {
+        .catalogoI__grid--card__link a {
           color: black;
           font-size: 30px; }
 
 @media (max-width: 1450px) {
   .content__off {
     grid-template-columns: 1fr; }
-  .catalogo__grid {
+  .catalogoI__grid {
     grid-template-columns: repeat(2, 1fr); }
   .ofertas {
     width: 800px; }
@@ -349,3 +349,293 @@ ul {
     font-size: 15px; }
   .catalogo__grid--card {
     width: 250px; } }
+
+.Formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; }
+  .Formulario_registrar {
+    background-color: #672544;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px black;
+    animation-name: Formularioa;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+    .Formulario_registrar-header {
+      text-align: center; }
+      .Formulario_registrar-header-titulo {
+        color: #fe7363;
+        font-size: 60px;
+        font-weight: bold; }
+    .Formulario_registrar-main {
+      font-size: 30px;
+      color: black; }
+  .Formulario_inicio {
+    background-color: #672544;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px black;
+    animation-name: Formularioa;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+    .Formulario_inicio-header {
+      text-align: center; }
+      .Formulario_inicio-header-title {
+        color: #fe7363;
+        font-size: 60px;
+        font-weight: bold; }
+    .Formulario_inicio-main {
+      font-size: 30px;
+      color: black; }
+
+@keyframes Formularioa {
+  0% {
+    background-color: #672544; }
+  50% {
+    background-color: #ffaf6f; }
+  100% {
+    background-color: #672544; } }
+
+@media (max-width: 1450px) {
+  .Formulario {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 540px) {
+  .Formulario_registrar {
+    width: 200px; }
+    .Formulario_registrar-header-titulo {
+      font-size: 20px; }
+    .Formulario_registrar-main {
+      font-size: 15px; }
+  .Formulario_inicio {
+    padding: 10px;
+    width: 200px; }
+    .Formulario_inicio-header-title {
+      font-size: 20px; }
+    .Formulario_inicio-main {
+      font-size: 15px; } }
+
+.contacto {
+  padding: 20px 35px;
+  gap: 40px; }
+  .contacto_header {
+    text-align: center; }
+    .contacto_header-title {
+      color: #fe7363;
+      font-size: 60px;
+      font-weight: bold; }
+      .contacto_header-title:hover {
+        color: #ffaf6f; }
+  .contacto_main {
+    text-align: center; }
+    .contacto_main-title {
+      color: #ffaf6f;
+      font-size: 30px; }
+
+.Sugerencia_a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Sugerencia {
+  background-color: #672544;
+  padding: 20px;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px black;
+  animation-name: CambioColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+  .Sugerencia_header {
+    text-align: center; }
+    .Sugerencia_header-title {
+      color: #fe7363;
+      font-size: 60px;
+      font-weight: bold; }
+  .Sugerencia_main {
+    font-size: 30px;
+    color: black; }
+
+@keyframes CambioColor {
+  0% {
+    background-color: #672544; }
+  50% {
+    background-color: #ffaf6f; }
+  100% {
+    background-color: #672544; } }
+
+@media (max-width: 390px) {
+  .contacto_header-title {
+    font-size: 20px; }
+  .contacto_main-title {
+    font-size: 15px; }
+  .Sugerencia {
+    height: auto; }
+    .Sugerencia_header-title {
+      font-size: 20px; }
+    .Sugerencia-main {
+      font-size: 15px; } }
+
+.catalogoC {
+  margin-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .catalogoC__title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fe7363;
+    font-size: 60px;
+    color: #fe7363;
+    padding: 20px; }
+  .catalogoC__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
+    .catalogoC__grid--card {
+      background-color: #672544;
+      padding: 20px;
+      width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px black;
+      transition: background-color 1s, transform 0.3s; }
+      .catalogoC__grid--card:hover {
+        background-color: #ffaf6f;
+        transform: translatey(-15px); }
+      .catalogoC__grid--card__header {
+        position: relative; }
+        .catalogoC__grid--card__header img {
+          width: 100%;
+          border-radius: 20px;
+          margin-bottom: 20px; }
+        .catalogoC__grid--card__header__title {
+          background-color: rgba(0, 20, 0, 0.5);
+          color: #672544;
+          padding: 8px;
+          position: absolute;
+          right: 0;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 20px;
+          text-transform: uppercase;
+          font-weight: bold; }
+      .catalogoC__grid--card__title {
+        color: #fe7363;
+        margin-bottom: 20px;
+        font-size: 30px; }
+      .catalogoC__grid--card__Description {
+        color: #ffed55;
+        margin-bottom: 40px; }
+      .catalogoC__grid--card__link {
+        background-color: #fffbed;
+        width: 100%;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center; }
+        .catalogoC__grid--card__link a {
+          color: black;
+          font-size: 30px; }
+
+@media (max-width: 1400px) {
+  .catalogoC__grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 880px) {
+  .catalogoC__grid {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 540px) {
+  .catalogoC__grid--card {
+    width: 275px; } }
+
+.OfertasC {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; }
+  .OfertasC_header {
+    background-color: #672544;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px black;
+    animation-name: Ofertast;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+    .OfertasC_header__title {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #fe7363;
+      font-size: 60px;
+      color: #fe7363;
+      padding: 20px; }
+    .OfertasC_header__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px; }
+      .OfertasC_header__grid--card {
+        background-color: #672544;
+        padding: 20px;
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px -12px black;
+        transition: background-color 1s, transform 0.3s; }
+        .OfertasC_header__grid--card:hover {
+          background-color: #ffaf6f;
+          transform: translatey(-15px); }
+        .OfertasC_header__grid--card__header {
+          position: relative; }
+          .OfertasC_header__grid--card__header img {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px; }
+          .OfertasC_header__grid--card__header__title {
+            background-color: rgba(0, 20, 0, 0.5);
+            color: #672544;
+            padding: 8px;
+            position: absolute;
+            right: 0;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            text-transform: uppercase;
+            font-weight: bold; }
+        .OfertasC_header__grid--card__title {
+          color: #fe7363;
+          margin-bottom: 20px;
+          font-size: 30px; }
+        .OfertasC_header__grid--card__Description {
+          color: #ffed55;
+          margin-bottom: 40px; }
+        .OfertasC_header__grid--card__link {
+          background-color: #fffbed;
+          width: 100%;
+          display: inline-block;
+          border-radius: 10px;
+          padding: 10px;
+          text-align: center; }
+          .OfertasC_header__grid--card__link a {
+            color: black;
+            font-size: 30px; }
+
+@keyframes Ofertast {
+  0% {
+    background-color: #672544; }
+  50% {
+    background-color: #ffaf6f; }
+  100% {
+    background-color: #672544; } }
+
+@media (max-width: 1400px) {
+  .OfertasC {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 1070px) {
+  .OfertasC {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 540px) {
+  .OfertasC_header {
+    width: 275px; } }

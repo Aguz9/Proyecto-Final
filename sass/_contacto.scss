@@ -1,0 +1,88 @@
+.contacto{
+    padding: 20px 35px;
+    gap: 40px;
+    &_header{
+        text-align: center;
+        
+        &-title{
+            color: $colorc;
+            font-size: $fonttitle;
+            font-weight: bold;
+            &:hover{
+                color: $colord;
+            }
+        }
+    }
+    &_main{
+        text-align: center;
+        &-title{
+            color: $colord;
+            font-size: $fontbase;
+        }
+    }
+}
+.Sugerencia_a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sugerencia{
+        background-color:$colora ;
+        padding: 20px;
+        width: 700px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+        animation-name: CambioColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        &_header{
+            text-align: center;
+            &-title{
+                color: $colorc;
+                font-size: $fonttitle;
+                font-weight: bold;   
+            }
+        }
+        &_main{
+            font-size: $fontbase;
+            color: $colorg;
+        }
+}
+
+@keyframes CambioColor{
+    0%{
+        background-color:$colora ;
+    }
+    50%{
+        background-color:$colord
+    }
+    100%{
+        background-color:$colora;
+    }    
+}
+@media (max-width: 390px){
+    .contacto{
+        &_header{
+            &-title{
+                font-size: 20px;
+            }
+        }
+        &_main{
+            &-title{
+                font-size: 15px;
+            }
+        }
+    }
+    .Sugerencia{
+        height: auto;
+            &_header{
+                &-title{
+                    font-size: 20px;
+                }
+            }
+            &-main{
+                font-size:15px;
+            }
+    }
+}

@@ -1,0 +1,109 @@
+.OfertasC{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    &_header{
+        background-color:$colora ;
+        padding: 20px;
+        width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+        animation-name: Ofertast;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        &__title{
+            margin-bottom: 20px;
+            text-align: center;
+            color: $colorc;
+            font-size: $fonttitle;
+            color: $colorc;
+            padding: 20px;
+        }
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            &--card{
+                background-color: $colora;
+                padding: 20px;
+                width: 400px;
+                border-radius: 20px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+                transition: background-color 1s, transform 0.3s;
+                &:hover{
+                    background-color:$colord;
+                    transform: translatey(-15px); 
+                }
+                &__header{
+                    position: relative;
+                    img{
+                        width: 100%;
+                        border-radius: 20px;
+                        margin-bottom: 20px;
+                    } 
+                    &__title{
+                        background-color:rgba(0, 20, 0, 0.5);
+                        color: $colora;
+                        padding: 8px;
+                        position: absolute;
+                        right: 0;
+                        border-bottom-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                &__title{
+                    color: $colorc;
+                    margin-bottom: 20px;
+                    font-size: $fontbase;   
+                } 
+                &__Description{
+                    color: $colore;
+                    margin-bottom: 40px;  
+                }
+                &__link{
+                    background-color: $colorf;
+                    width: 100%;
+                    display: inline-block;
+                    border-radius: 10px;
+                    padding: 10px;
+                    text-align: center;
+                    a{
+                        color: $colorg;
+                        font-size: $fontbase;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+@keyframes Ofertast {
+    0%{
+        background-color:$colora ;
+    }
+    50%{
+        background-color:$colord
+    }
+    100%{
+        background-color:$colora;
+    }   
+}
+@media (max-width: 1400px){
+    .OfertasC{
+        grid-template-columns: repeat(2, 1fr);    
+    }      
+}   
+@media (max-width: 1070px){
+    .OfertasC{
+        grid-template-columns: 1fr;    
+    }      
+}   
+@media (max-width: 540px){
+    .OfertasC{
+        &_header{
+            width: 275px;
+        }   
+    }   
+}  

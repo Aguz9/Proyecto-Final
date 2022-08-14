@@ -1,0 +1,95 @@
+.Formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    &_registrar{
+        background-color:$colora ;
+        padding: 20px;
+        width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+        animation-name: Formularioa;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        &-header{
+            text-align: center;
+            &-titulo{
+                color: $colorc;
+                font-size: $fonttitle;
+                font-weight: bold;   
+            }
+        }
+        &-main{
+            font-size: $fontbase;
+            color: $colorg;
+        }
+    }
+    &_inicio{
+        background-color:$colora ;
+        padding: 20px;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+        animation-name: Formularioa;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        &-header{
+            text-align: center;
+            &-title{
+                color: $colorc;
+                font-size: $fonttitle;
+                font-weight: bold;   
+            }
+        }
+        &-main{
+            font-size: $fontbase;
+            color: $colorg;
+        }
+    }
+}
+
+@keyframes Formularioa {
+    0%{
+        background-color:$colora ;
+    }
+    50%{
+        background-color:$colord
+    }
+    100%{
+        background-color:$colora;
+    }    
+}
+@media (max-width: 1450px){
+    .Formulario{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:540px){
+    .Formulario{
+        &_registrar{
+        width: 200px;
+        &-header{
+            &-titulo{
+                font-size: 20px; 
+            }
+        }
+        &-main{
+            font-size: 15px;
+        }
+    }
+    &_inicio{
+        padding:10px;
+        width: 200px;
+        &-header{
+            &-title{
+                font-size: 20px; 
+            }
+        }
+        &-main{
+            font-size: 15px;
+        }
+    }
+}
+} 
